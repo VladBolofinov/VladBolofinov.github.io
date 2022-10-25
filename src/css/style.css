@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box; /* Свойства width и height включают в себя значения padding и border, но не margin. */
+    margin: 0;
+    padding: 0;
+    width: 1600px;  /*по ТЗ ширина экрана 1600*/ 
+}
+
+header {
+    height: 80px;
+    background: #000000;
+    backdrop-filter: blur(2px);
+}
+
+nav {
+    
+}
+
+.container {        /* блок в котором весь контент будет, для самых малых мониторов так делают */
+    width: 1160px;
+    margin: 0 auto; /*такой штукой ставятся блочные эл-ты по центру  */
+}
+
+.promo {
+    height: 700px;
+    background: url('../img/GiantPanda_bg.png') center center/cover no-repeat;
+}
+
+.promo_ellips {
+    position: relative;
+    margin: 15px 0px 0px 587px;
+    width: 573px;
+    height: 474px;
+}
+
+.promo_ellips .ellips {
+    position: absolute;
+    width: 465px;
+    height: 465px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.promo_ellips .ellips_text {
+    padding: 74px 0px 0px 73px;
+    width: 573px;
+    height: 474px;
+    position: absolute;
+    z-index: 2;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFEE2E;
+}

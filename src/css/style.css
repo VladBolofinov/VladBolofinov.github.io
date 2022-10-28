@@ -18,10 +18,11 @@ nav {
 .container {        /* блок в котором весь контент будет, для самых малых мониторов так делают */
     width: 1160px;
     margin: 0 auto; /*такой штукой ставятся блочные эл-ты по центру  */
+    color: #333B41;
 }
 
 .promo {
-    height: 700px;
+    height: 780px;
     background: url('../img/GiantPanda_bg.png') center center/cover no-repeat;
 }
 
@@ -66,4 +67,143 @@ span {
     text-align: center;
     text-transform: uppercase;
     color: #FFEE2E;
+}
+
+.promo_btn {
+    width: 298px;
+    height: 54px;
+    margin: 60px 99px 0 763px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border: none;
+    border-radius: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.backstage {
+    height: 703px;
+}
+
+.old_man {
+    float: left;
+    width: 609px;
+    height: 403px;
+    margin-top: 140px;
+    margin-right: 87px;
+}
+
+
+.backstage_header {
+    width: 1160px;
+    padding: 140px 0 0 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.first_paragraph {
+    width: 1160px;
+    padding-top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.subtitles {
+    padding-top: 54px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.second_paragraph {
+    width: 1160px;
+    padding-top: 34px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.animals_card {
+    height: 1106px;
+}
+
+.animals_card .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* width: 1160px; */
+}
+
+.animals_card .container .card {
+    margin-top: 20px;
+    width: 366px;
+    height: 426px;
+    border-radius: 5px;
+    border: 1px solid rgba(254, 144, 19, 1);
+}
+
+.animals_card .container .card .card_image {
+    border-radius: 5px;
+    width: 364px;
+    height: 366px;
+}
+
+.animals_card .container .card .animal_btn {
+    display: inline-block;
+    padding: 0 0 0 16px;
+    width: 200px;
+    height: 22px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #FFFFFF;
+    text-align: left;
+    cursor: pointer;
+}
+
+.animals_card .container .card .animal_paragraph {
+    display: inline-block;
+    width: 250px;
+    padding-left: 16px ;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.animals_card .container .card .card_icon_bamboo {
+    display: inline-block;
+    float: right;
+    width: 33px;
+    height: 37px;
+    margin: -13px 12px 0 0;
+    vertical-align: top;
+}
+
+.animals_card .container .card .card_icon_meet {
+    display: inline-block;
+    float: right;
+    width: 48px;
+    height: 38px;
+    margin: -14px 8px 0 0;
+    vertical-align: top;
 }

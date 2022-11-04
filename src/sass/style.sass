@@ -1,35 +1,37 @@
 *
   font-family: 'Roboto'
   box-sizing: border-box
-
   /* Свойства width и height включают в себя значения padding и border, но не margin.
   margin: 0
   padding: 0
 
 body
+  font-size: 16px
+  font-weight: 400
   width: 1600px
-
   /*по ТЗ ширина экрана 1600 (не удалять, потом раскоментировать
 
-header
+header, footer
   height: 80px
   background: #000000
   backdrop-filter: blur(2px)
+  font-weight: 500
+  line-height: 22px
+  color: #FFFFFF
 
 .logo
   position: relative
-  /* display: inline-block */
   border: 1px solid #FFFFFF
   border-radius: 2px
   width: 82px
   height: 52px
 h1
   margin: 3.55px 4.75px
-  font-weight: 400
   font-size: 19.0145px
   line-height: 23px
   text-align: center
   color: #FFFFFF
+  font-weight: 400
 .logo_img
   width: 9px
   height: 21px
@@ -56,20 +58,19 @@ h1
         .wrapper
           display: flex
           justify-content: space-between
-          .item
-            font-weight: 500
-            font-size: 16px
-            line-height: 22px
-            color: #FFFFFF
+            
       .trademark
-        font-weight: 500
-        font-size: 16px
-        line-height: 22px
-        color: #FFFFFF
         margin: 14px 0 0 438px
 
 button
+  font-weight: 500
+  line-height: 22px
+  text-align: center
+  text-transform: uppercase
   color: #FFFFFF
+  border: none
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%)
+  border-radius: 25px
 
 .container
   /* блок в котором весь контент будет, для самых малых мониторов так делают
@@ -123,14 +124,6 @@ button
       width: 298px
       height: 54px
       margin: 60px 99px 0 763px
-      background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%)
-      border: none
-      border-radius: 25px
-      font-weight: 500
-      font-size: 16px
-      line-height: 22px
-      text-align: center
-      text-transform: uppercase
 
 .backstage
   height: 703px
@@ -146,28 +139,23 @@ button
     .backstage_header
       width: 1160px
       padding: 140px 0 0 0
-      font-weight: 400
       font-size: 48px
       line-height: 58px
+      font-weight: 400
 
     .first_paragraph
       width: 1160px
       padding-top: 20px
-      font-weight: 400
-      font-size: 16px
       line-height: 21px
 
     .subtitles
       padding-top: 54px
-      font-weight: 400
       font-size: 24px
       line-height: 29px
 
     .second_paragraph
       width: 1160px
       padding-top: 34px
-      font-weight: 400
-      font-size: 16px
       line-height: 22px
 
 .animals_card
@@ -195,14 +183,11 @@ button
         padding: 0 0 0 16px
         width: 200px
         height: 22px
-        font-weight: 500
-        font-size: 16px
-        text-transform: uppercase
-        border: none
-        background-color: #FFFFFF
+        background: #FFFFFF
         text-align: left
         cursor: pointer
         color: #000000
+        border-radius: 0px
 
       .animal_paragraph
         display: inline-block
@@ -233,13 +218,6 @@ button
       margin: 0 auto
       width: 298px
       height: 54px
-      background: #FE9013
-      border-radius: 25px
-      border: none
-      font-weight: 500
-      font-size: 16px
-      text-align: center
-      text-transform: uppercase
       margin-top: 80px
 
 .pick_and_feed
@@ -257,7 +235,6 @@ button
     .header
       padding-top: 41px
       width: 1160px
-      font-weight: 400
       font-size: 48px
       line-height: 58px
       text-align: center
@@ -267,7 +244,6 @@ button
       width: 1160px
       text-align: left
       padding: 30px 0 0 99px
-      font-weight: 400
       font-size: 24px
       line-height: 29px
       color: #333B41
@@ -277,7 +253,6 @@ button
       text-align: left
       padding: 40px 0 0 99px
       font-weight: 500
-      font-size: 16px
       line-height: 21px
       color: #333B41
 
@@ -285,8 +260,6 @@ button
       padding: 10px 0 0 99px
       width: 1160px
       text-align: left
-      font-weight: 400
-      font-size: 16px
       line-height: 21px
       color: #333B41
 
@@ -305,14 +278,11 @@ a
   .subheader_descr a
     color: #333B41
     text-decoration: none
-
   .header3_section
-    font-weight: 400
     font-size: 36px
     line-height: 47px
     text-align: center
     padding-top: 40px
-
   .wrapper
     padding-top: 40px
     display: flex
@@ -321,15 +291,12 @@ a
     margin: 0 auto
     width: 764px
     min-height: 245px
-
     .card
       width: 168px
       height: 168px
       background-color: #FFEE2E
-
       .box_descr
         margin-top: 30px
-
       .box
         display: flex
         justify-content: center
@@ -339,69 +306,48 @@ a
         background: #FFFFFF
         border-radius: 5px
         border: 1px solid rgba(254, 144, 19, 1)
-
     .vector
       width: 69px
       height: 35px
-
   .pick_and_feed_btn
     display: block
     margin: 0px auto
     width: 298px
     height: 54px
-    background: #FE9013
-    border-radius: 25px
-    border: none
-    font-weight: 500
-    font-size: 16px
-    text-align: center
-    text-transform: uppercase
     margin-top: 120px
-
 .testimonials
   padding-top: 140px
-
   .container
     width: 1160px
     height: 919px
     text-align: center
-
     .header_testimonials
       font-weight: 400
       font-size: 36px
       line-height: 47px
-
     .wrapper
       display: flex
       padding-top: 47px
       justify-content: space-between
-
       .card
         width: 267px
         height: 391px
         background: #F1F3F2
         border: 2px solid
         border-radius: 20px
-        border-bottom-color: rgba(254, 189, 171, 0.74)
-        border-left-color: rgba(243, 169, 248, 0.66)
-        border-top-color: rgba(243, 169, 248, 0.66)
-        border-right-color: rgba(254, 189, 171, 0.74)
-
+        border-color: rgba(243, 169, 248, 0.66) rgba(254, 189, 171, 0.74) rgba(254, 189, 171, 0.74) rgba(243, 169, 248, 0.66)
         .card_icon
           .avatar
             float: left
             padding: 15px 10px 0 16px
-
           .avatar_descr
             padding-top: 15px
             text-align: left
-
           .avatar_descr2
             font-weight: 300
             font-size: 15px
             line-height: 18px
             color: #BDBDBD
-
         .card_text
           padding: 11px 15px 19px 16px
           font-weight: 300
@@ -409,7 +355,6 @@ a
           line-height: 18px
           color: #767474
           text-align: left
-
     .scroll-line
       margin: 0 auto
       margin-top: 21px
@@ -422,29 +367,21 @@ a
       border-right-color: rgba(254, 189, 171, 0.74)
       border-top-color: rgba(243, 169, 248, 0.66)
       border-left-color: rgba(243, 169, 248, 0.66)
-
     .scroll-line_inside
       width: 115.19px
       height: 7px
       background: #FE9013
       border-radius: 5px
-
     .testimonials_btn
       display: block
       margin-top: 31px
       width: 298px
       height: 54px
-      background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%)
       border-radius: 5px
-      border: none
-      font-weight: 500
-      font-size: 16px
-      text-align: center
-      text-transform: uppercase
-
-footer
+.end
   background: #111115
   height: 443px
+  font-weight: 400
   .container
     width: 1160px
     .footer_btn
@@ -452,13 +389,7 @@ footer
       margin-top: 36px
       width: 298px
       height: 54px
-      background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%)
       border-radius: 5px
-      border: none
-      font-weight: 500
-      font-size: 16px
-      text-align: center
-      text-transform: uppercase
     .wrapper
       display: flex
       justify-content: space-between
@@ -469,7 +400,6 @@ footer
         height: 85px
         margin-top: 40px
         .input_text
-          font-weight: 400
           font-size: 24px
           line-height: 29px
           color: #FFFFFF
@@ -480,27 +410,22 @@ footer
             height: 42px
             border-radius: 2px
             border: 0.7px solid rgba(254, 144, 19, 1)
-            font-weight: 400
-            font-size: 16px
-            line-height: 22px
             color: #BDBDBD
             opacity: 0.5
             background-color: #111115
           button
             width: 129px
             height: 42px
-            font-weight: 400
-            font-size: 16px
-            line-height: 22px
             color: #000000
+            background: #F1F3F2
+            border-radius: 0px
     .wrapper_links
+      font-weight: 400
       margin-top: 44px
       .wrapper_social
         display: inline-block 
         .social_item
           display: flex
-          font-weight: 400
-          font-size: 16px
           line-height: 22px
           color: #FFFFFF
           margin-bottom: 10px
@@ -519,8 +444,6 @@ footer
         margin-left: 268px
         .menu_links_item
           display: inline-block
-          font-weight: 400
-          font-size: 16px
           line-height: 22px
           color: #FFFFFF
           margin-right: 58px
@@ -528,6 +451,5 @@ footer
         display: inline-block
         margin-left: 113px
         font-weight: 100
-        font-size: 16px
         line-height: 21px
         color: #FFFFFF

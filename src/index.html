@@ -55,43 +55,68 @@
         </section>
 
         <section class="animals_card">
+            <button class="slider_btn prev">
+                <img class="slider_btn_arrow" src="icons/arrow_left.svg" alt="arrow">
+            </button>
+            <button class="slider_btn next">
+                <img class="slider_btn_arrow" src="icons/arrow_right.svg" alt="arrow">
+            </button>
             <div class="container">
-                <div class="card">
+                <div class="card active">
                     <img class="card_image" src="img/pandas.png" alt="pandas">
                     <button class="animal_card_btn">Giant pandas</button>
                     <p class="animal_paragraph">Native to Southwest China</p>
                     <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
                 </div>
-                <div class="card">
+                <div class="card active">
                     <img class="card_image" src="img/eagles.png" alt="eagles">
                     <button class="animal_card_btn">eagles</button>
                     <p class="animal_paragraph">Native to South America</p>
                     <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
                 </div>
-                <div class="card">
+                <div class="card active">
                     <img class="card_image" src="img/gorillas.png" alt="gorillas">
                     <button class="animal_card_btn">gorillas</button>
                     <p class="animal_paragraph">Native to Congo</p>
                     <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
                 </div>
-                <div class="card">
+
+                <!-- hidden card -->
+                <div class="card non-active">
+                    <img class="card_image" src="img/alligators.png" alt="alligators">
+                    <button class="animal_card_btn">Alligators</button>
+                    <p class="animal_paragraph">Native to Southeastern United States</p>
+                    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
+                </div>
+
+
+                <div class="card active">
                     <img class="card_image" src="img/two-toed_sloth.png" alt="two-toed sloth">
                     <button class="animal_card_btn">two-toed sloth</button>
                     <p class="animal_paragraph">Mesoamerica, South America</p>
                     <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
                 </div>
-                <div class="card">
+                <div class="card active">
                     <img class="card_image" src="img/cheetahs.png" alt="cheetahs">
                     <button class="animal_card_btn">cheetahs</button>
                     <p class="animal_paragraph">Native to Africa</p>
                     <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
                 </div>
-                <div class="card">
+                <div class="card active">
                     <img class="card_image" src="img/penguins.png" alt="penguins">
                     <button class="animal_card_btn">penguins</button>
                     <p class="animal_paragraph">Native to Antarctica</p>
                     <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
                 </div>
+                
+                <!-- hidden card -->
+                <div class="card non-active">
+                    <img class="card_image" src="img/gorillas2.png" alt="gorillas">
+                    <button class="animal_card_btn">gorillas</button>
+                    <p class="animal_paragraph">Native to Congo</p>
+                    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
+                </div>
+
                 <button class="animal_btn">choose your favorite</button>
             </div>
         </section>
@@ -188,13 +213,13 @@
                         <img src="icons/bamboo_logo.svg" alt="bamboo" class="logo_img">
                         <h1>PetStory online</h1>
                     </div>
-                    <div class="wrapper_input">
+                    <form action="#">
                         <div class="input_text">Subscribe to our news</div>
                         <div class="wrapper_input_btn">
-                            <input type="enter your email">
+                            <input name="email" required placeholder="Enter your email" type="email">
                             <button>Submit</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <button class="footer_btn">donate for volunteers</button>
                 <div class="wrapper_links">
@@ -237,4 +262,5 @@
         </footer>
     </main>
 </body>
+<script src="js/carousel.js"></script>
 </html>

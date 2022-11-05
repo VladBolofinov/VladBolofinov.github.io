@@ -161,7 +161,19 @@ button
       line-height: 22px
 
 .animals_card
+  position: relative
   height: 1106px
+  .slider_btn
+    position: absolute
+    width: 62px
+    height: 62px
+    border-radius: 50%
+  .prev
+    top: 425px
+    left: 138px
+  .next
+    top: 425px
+    right: 140px
 
   .container
     display: flex
@@ -169,17 +181,11 @@ button
     justify-content: space-between
 
     .card
-      margin-top: 20px
-      width: 366px
-      height: 426px
-      border-radius: 5px
-      border: 1px solid rgba(254, 144, 19, 1)
-
+      animation: 0.5s ease-in-out
       .card_image
         border-radius: 5px
         width: 364px
         height: 366px
-
       .animal_card_btn
         display: inline-block
         padding: 0 0 0 16px
@@ -190,10 +196,9 @@ button
         cursor: pointer
         color: #000000
         border-radius: 0px
-
       .animal_paragraph
         display: inline-block
-        width: 250px
+        width: 260px
         padding-left: 16px
         font-weight: 300
         font-size: 15px
@@ -221,6 +226,38 @@ button
       width: 298px
       height: 54px
       margin-top: 80px
+
+    .active
+      margin-top: 20px
+      width: 366px
+      height: 426px
+      border-radius: 5px
+      border: 1px solid rgba(254, 144, 19, 1)
+    .non-active
+      display: none
+
+.to-left
+  animation-name: left
+.to-right
+  animation-name: right
+  animation-direction: reverse
+.from-left
+  animation-name: left
+  animation-direction: reverse
+.from-right
+  animation-name: left
+
+@keyframes left 
+	left: 0
+to 
+	left: -100%
+
+@keyframes right 
+	left: 100%
+to 
+	left: 0
+
+
 
 .pick_and_feed
   height: 1004px
@@ -397,7 +434,7 @@ a
       justify-content: space-between
       .logo
         margin-top: 41px
-      .wrapper_input
+      form
         width: 367px
         height: 85px
         margin-top: 40px
@@ -415,6 +452,7 @@ a
             color: #BDBDBD
             opacity: 0.5
             background-color: #111115
+            padding: 0 10px
           button
             width: 129px
             height: 42px

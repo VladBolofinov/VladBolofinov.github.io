@@ -8,7 +8,7 @@ let placeInArray = function(){     //Функция, создаёт массив
     let numbers = [0, 1, 2, 3, 4, 5, 6, 7],
         newArr = [],
         createRandomIndex = function(){
-            return Math.floor(Math.random() * (numbers.length)); // генерируем случайный индекс в допустимом диапазоне
+            return Math.floor(Math.random() * (numbers.length)); // generate random index in the current range
         },
         loopArray = function(){
             for (let i = 0; i < 10; i++){

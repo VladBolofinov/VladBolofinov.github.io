@@ -61,6 +61,8 @@ h1
         margin: 14px 0 0 438px
 
 button
+  width: 298px
+  height: 54px
   font-weight: 500
   line-height: 22px
   text-align: center
@@ -160,6 +162,13 @@ button
       padding-top: 34px
       line-height: 22px
 
+
+
+
+
+
+
+  
 .animals_card
   position: relative
   height: 1106px
@@ -174,14 +183,14 @@ button
   .next
     top: 425px
     right: 140px
-
-  .container
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-
+  .animal_btn
+    margin: 80px 0 0 651px
+    width: 298px
+    height: 54px
+    margin-top: 80px
+  .container_carousel
+    animation: 0.5s ease-in-out 
     .card_animal
-      animation: 0.5s ease-in-out
       .card_image
         border-radius: 5px
         width: 364px
@@ -220,22 +229,25 @@ button
         height: 38px
         margin: -14px 8px 0 0
         vertical-align: top
-
-    .animal_btn
-      margin: 0 auto
-      width: 298px
-      height: 54px
-      margin-top: 80px
-
-    .active
+    .show
       margin-top: 20px
       width: 366px
       height: 426px
       border-radius: 5px
       border: 1px solid rgba(254, 144, 19, 1)
-    .non-active
+    .hide
       display: none
+  .active
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    width: 1160px
+    margin: 0 auto
+  .non-active
+    display: none  
 
+
+  /* Это что-то для скрипта карусели, но оно не работает */
 .to-left
   animation-name: left
 .to-right
@@ -256,6 +268,12 @@ to
  left: 100%
 to 
  left: 0
+
+
+
+
+
+
 
 
 

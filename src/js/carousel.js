@@ -1,20 +1,41 @@
-let leftCtrl = document.querySelector('.slider_btn.prev');
-let slides = document.querySelectorAll('.container_carousel');
-let cards = document.querySelectorAll('.container_carousel.active .card_animal');
-
-console.log(cards[6].classList.contains('show'));
-
-
-/* leftCtrl.addEventListener('click', () => {
-    slides[0].classList.remove('.active');
-    slides[0].classList.add('non-active');
-    slides[1].classList.remove('non-active');
-    slides[1].classList.add('active');
-}); */
-
-
-
-let placeInArray = function(){     //Функция, создаёт массив рандомных чисел(блоков), которые будут на странице прогружаться
+let leftCtrl = document.querySelector('.slider_btn.prev'),
+    slides = document.querySelectorAll('.container_carousel'),
+    cards = document.querySelectorAll('.container_carousel.active .card_animal'),
+    objCards = {
+    0: `<img class="card_image" src="img/pandas.png" alt="pandas">
+    <button class="animal_card_btn">Giant pandas</button>
+    <p class="animal_paragraph">Native to Southwest China</p>
+    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">`,
+    1: `<img class="card_image" src="img/eagles.png" alt="eagles">
+    <button class="animal_card_btn">eagles</button>
+    <p class="animal_paragraph">Native to South America</p>
+    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">`,
+    2: `<img class="card_image" src="img/gorillas.png" alt="gorillas">
+    <button class="animal_card_btn">gorillas</button>
+    <p class="animal_paragraph">Native to Congo</p>
+    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">`,
+    3: `<img class="card_image" src="img/alligators.png" alt="alligators">
+    <button class="animal_card_btn">Alligators</button>
+    <p class="animal_paragraph">Native to Southeastern United States</p>
+    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">`,
+    4: `<img class="card_image" src="img/two-toed_sloth.png" alt="two-toed sloth">
+    <button class="animal_card_btn">two-toed sloth</button>
+    <p class="animal_paragraph">Mesoamerica, South America</p>
+    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">`,
+    5: `<img class="card_image" src="img/cheetahs.png" alt="cheetahs">
+    <button class="animal_card_btn">cheetahs</button>
+    <p class="animal_paragraph">Native to Africa</p>
+    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">`,
+    6: `<img class="card_image" src="img/penguins.png" alt="penguins">
+    <button class="animal_card_btn">penguins</button>
+    <p class="animal_paragraph">Native to Antarctica</p>
+    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">`,
+    7: `<img class="card_image" src="img/gorillas2.png" alt="gorillas">
+    <button class="animal_card_btn">gorillas</button>
+    <p class="animal_paragraph">Native to Congo</p>
+    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">`
+},
+    placeInArray = function(){     //Функция, создаёт массив рандомных чисел(блоков), которые будут на странице прогружаться
     let numbers = [0, 1, 2, 3, 4, 5, 6, 7],
         newArr = [],
         createRandomIndex = function(){
@@ -24,53 +45,40 @@ let placeInArray = function(){     //Функция, создаёт массив
             for (let i = 0; i < 10; i++){
                 newArr.push(createRandomIndex());
             }
-            newArr = Array.from(new Set(newArr));
+            newArr = Array.from(new Set(newArr));    //убирает повторяющиеся значения
         };
 
     while (newArr.length !== 8) {loopArray();}
 
     return newArr;
-}
-let arrNumbers = placeInArray();
-
-function mixCarousel(){
-    for (let i = 0; i < 8; i++){
-        if (cards[i].classList.contains('hide')){
-            cards[i].classList.remove('.hide');
-            cards[i].classList.add('.show');
-            cards[i-1].classList.remove('.show');
-            cards[i-1].classList.add('.hide');
+},
+    mixCarousel = function() {
+    let arrNumbers = placeInArray();
+        for (let i = 0, j = 0; i < 8, j < 24; j++, i++){
+            cards[j].innerHTML = objCards[arrNumbers[i]];
+            if (i == 7) {
+                i = 0;
+            }
         }
-        cards[i].innerHTML = cards[arrNumbers[i]].innerHTML;
-        cards[arrNumbers[i]].innerHTML = cards[i].innerHTML;
-    }
-}
-mixCarousel();
+};
 
+var slider = tns({
+    container: '.my-slider',
+    items: 1,
+    slideBy: 1,
+    autoplay: false,
+    nav: false,
+    controls: false,
+    loop: true,
+    rewind: true
+  });
 
+  document.querySelector('.prev').addEventListener('click', function () {
+    slider.goTo('prev');
+    mixCarousel();
+  });
 
-
-
-
-
-
-
-
-
-    /* prev = document.querySelector('.prev'),
-    next = document.querySelector('.next'); */
-/* let currentItem = 0;
-let isEnabled = true; */
-
-
-
-    /* function changeCurrentItem(n){
-    currentItem = (n + items.length) % items.length;
-}
-
-document.querySelector('.slider_btn_prev').addEventListener('click',function() {
-    if (isEnabled) {
-        previousItem(currentItem);
-    }
-});
- */
+  document.querySelector('.next').addEventListener('click', function () {
+    slider.goTo('next');
+    mixCarousel();
+  });

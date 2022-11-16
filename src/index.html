@@ -9,6 +9,7 @@
     <title>Online zoo</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -34,7 +35,6 @@
                     </div> 
                 </nav>
             </header>
-
             <div class="container">
                 <div class="promo_ellips">
                     <div class="ellips"></div>
@@ -53,192 +53,181 @@
                 <p class="second_paragraph">The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.</p>   
             </div>
         </section>
-
         <section class="animals_card">
-            <button class="slider_btn prev">
-                <img class="slider_btn_arrow" src="icons/arrow_left.svg" alt="arrow">
-            </button>
-            <button class="slider_btn next">
-                <img class="slider_btn_arrow" src="icons/arrow_right.svg" alt="arrow">
-            </button>
-
-            <div class="container_carousel active">
-                <div class="card_animal show">
-                    <img class="card_image" src="img/pandas.png" alt="pandas">
-                    <button class="animal_card_btn">Giant pandas</button>
-                    <p class="animal_paragraph">Native to Southwest China</p>
-                    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
+            <div class="container">
+                <button class="slider_btn prev">
+                    <img class="slider_btn_arrow" src="icons/arrow_left.svg" alt="arrow">
+                </button>
+                <button class="slider_btn next">
+                    <img class="slider_btn_arrow" src="icons/arrow_right.svg" alt="arrow">
+                </button>
+                <div class="my-slider">
+                    <div>
+                        <div class="container_carousel active">
+                        <div class="card_animal show">
+                            <img class="card_image" src="img/pandas.png" alt="pandas">
+                            <button class="animal_card_btn">giant pandas</button>
+                            <p class="animal_paragraph">Native to Southwest China</p>
+                            <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
+                        </div>
+                        <div class="card_animal show">
+                            <img class="card_image" src="img/eagles.png" alt="eagles">
+                            <button class="animal_card_btn">eagles</button>
+                            <p class="animal_paragraph">Native to South America</p>
+                            <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
+                        </div>
+                        <div class="card_animal show">
+                            <img class="card_image" src="img/gorillas.png" alt="gorillas">
+                            <button class="animal_card_btn">gorillas</button>
+                            <p class="animal_paragraph">Native to Congo</p>
+                            <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
+                        </div>
+                        <!-- hidden card -->
+                        <div class="card_animal hide">
+                            <img class="card_image" src="img/alligators.png" alt="alligators">
+                            <button class="animal_card_btn">Alligators</button>
+                            <p class="animal_paragraph">Native to Southeastern United States</p>
+                            <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
+                        </div>
+                        <div class="card_animal show">
+                            <img class="card_image" src="img/two-toed_sloth.png" alt="two-toed sloth">
+                            <button class="animal_card_btn">two-toed sloth</button>
+                            <p class="animal_paragraph">Mesoamerica, South America</p>
+                            <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
+                        </div>
+                        <div class="card_animal show">
+                            <img class="card_image" src="img/cheetahs.png" alt="cheetahs">
+                            <button class="animal_card_btn">cheetahs</button>
+                            <p class="animal_paragraph">Native to Africa</p>
+                            <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
+                        </div>
+                        <div class="card_animal show">
+                            <img class="card_image" src="img/penguins.png" alt="penguins">
+                            <button class="animal_card_btn">penguins</button>
+                            <p class="animal_paragraph">Native to Antarctica</p>
+                            <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
+                        </div>
+                        <!-- hidden card -->
+                        <div class="card_animal hide">
+                            <img class="card_image" src="img/gorillas2.png" alt="gorillas">
+                            <button class="animal_card_btn">gorillas</button>
+                            <p class="animal_paragraph">Native to Congo</p>
+                            <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
+                        </div>
+                    </div>
                 </div>
-                <div class="card_animal show">
-                    <img class="card_image" src="img/eagles.png" alt="eagles">
-                    <button class="animal_card_btn">eagles</button>
-                    <p class="animal_paragraph">Native to South America</p>
-                    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
+                    <div><div class="container_carousel active">
+                        <div class="card_animal show">
+                            <img class="card_image" src="img/pandas.png" alt="pandas">
+                            <button class="animal_card_btn">giant pandas</button>
+                            <p class="animal_paragraph">Native to Southwest China</p>
+                            <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
+                        </div>
+                        <div class="card_animal show">
+                            <img class="card_image" src="img/eagles.png" alt="eagles">
+                            <button class="animal_card_btn">eagles</button>
+                            <p class="animal_paragraph">Native to South America</p>
+                            <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
+                        </div>
+                        <div class="card_animal show">
+                            <img class="card_image" src="img/gorillas.png" alt="gorillas">
+                            <button class="animal_card_btn">gorillas</button>
+                            <p class="animal_paragraph">Native to Congo</p>
+                            <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
+                        </div>
+                        <!-- hidden card -->
+                        <div class="card_animal hide">
+                            <img class="card_image" src="img/alligators.png" alt="alligators">
+                            <button class="animal_card_btn">Alligators</button>
+                            <p class="animal_paragraph">Native to Southeastern United States</p>
+                            <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
+                        </div>
+                        <div class="card_animal show">
+                            <img class="card_image" src="img/two-toed_sloth.png" alt="two-toed sloth">
+                            <button class="animal_card_btn">two-toed sloth</button>
+                            <p class="animal_paragraph">Mesoamerica, South America</p>
+                            <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
+                        </div>
+                        <div class="card_animal show">
+                            <img class="card_image" src="img/cheetahs.png" alt="cheetahs">
+                            <button class="animal_card_btn">cheetahs</button>
+                            <p class="animal_paragraph">Native to Africa</p>
+                            <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
+                        </div>
+                        <div class="card_animal show">
+                            <img class="card_image" src="img/penguins.png" alt="penguins">
+                            <button class="animal_card_btn">penguins</button>
+                            <p class="animal_paragraph">Native to Antarctica</p>
+                            <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
+                        </div>
+                        <!-- hidden card -->
+                        <div class="card_animal hide">
+                            <img class="card_image" src="img/gorillas2.png" alt="gorillas">
+                            <button class="animal_card_btn">gorillas</button>
+                            <p class="animal_paragraph">Native to Congo</p>
+                            <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
+                        </div>
+                    </div>
                 </div>
-                <div class="card_animal show">
-                    <img class="card_image" src="img/gorillas.png" alt="gorillas">
-                    <button class="animal_card_btn">gorillas</button>
-                    <p class="animal_paragraph">Native to Congo</p>
-                    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
-                </div>
-
-                <!-- hidden card -->
-                <div class="card_animal hide">
-                    <img class="card_image" src="img/alligators.png" alt="alligators">
-                    <button class="animal_card_btn">Alligators</button>
-                    <p class="animal_paragraph">Native to Southeastern United States</p>
-                    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
-                </div>
-
-
-                <div class="card_animal show">
-                    <img class="card_image" src="img/two-toed_sloth.png" alt="two-toed sloth">
-                    <button class="animal_card_btn">two-toed sloth</button>
-                    <p class="animal_paragraph">Mesoamerica, South America</p>
-                    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
-                </div>
-                <div class="card_animal show">
-                    <img class="card_image" src="img/cheetahs.png" alt="cheetahs">
-                    <button class="animal_card_btn">cheetahs</button>
-                    <p class="animal_paragraph">Native to Africa</p>
-                    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
-                </div>
-                <div class="card_animal show">
-                    <img class="card_image" src="img/penguins.png" alt="penguins">
-                    <button class="animal_card_btn">penguins</button>
-                    <p class="animal_paragraph">Native to Antarctica</p>
-                    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
-                </div>
-                
-                <!-- hidden card -->
-                <div class="card_animal hide">
-                    <img class="card_image" src="img/gorillas2.png" alt="gorillas">
-                    <button class="animal_card_btn">gorillas</button>
-                    <p class="animal_paragraph">Native to Congo</p>
-                    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
-                </div>
+                    <div>
+                        <div class="container_carousel active">
+                            <div class="card_animal show">
+                                <img class="card_image" src="img/pandas.png" alt="pandas">
+                                <button class="animal_card_btn">giant pandas</button>
+                                <p class="animal_paragraph">Native to Southwest China</p>
+                                <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
+                            </div>
+                            <div class="card_animal show">
+                                <img class="card_image" src="img/eagles.png" alt="eagles">
+                                <button class="animal_card_btn">eagles</button>
+                                <p class="animal_paragraph">Native to South America</p>
+                                <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
+                            </div>
+                            <div class="card_animal show">
+                                <img class="card_image" src="img/gorillas.png" alt="gorillas">
+                                <button class="animal_card_btn">gorillas</button>
+                                <p class="animal_paragraph">Native to Congo</p>
+                                <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
+                            </div>
+                            <!-- hidden card -->
+                            <div class="card_animal hide">
+                                <img class="card_image" src="img/alligators.png" alt="alligators">
+                                <button class="animal_card_btn">Alligators</button>
+                                <p class="animal_paragraph">Native to Southeastern United States</p>
+                                <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
+                            </div>
+                            <div class="card_animal show">
+                                <img class="card_image" src="img/two-toed_sloth.png" alt="two-toed sloth">
+                                <button class="animal_card_btn">two-toed sloth</button>
+                                <p class="animal_paragraph">Mesoamerica, South America</p>
+                                <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
+                            </div>
+                            <div class="card_animal show">
+                                <img class="card_image" src="img/cheetahs.png" alt="cheetahs">
+                                <button class="animal_card_btn">cheetahs</button>
+                                <p class="animal_paragraph">Native to Africa</p>
+                                <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
+                            </div>
+                            <div class="card_animal show">
+                                <img class="card_image" src="img/penguins.png" alt="penguins">
+                                <button class="animal_card_btn">penguins</button>
+                                <p class="animal_paragraph">Native to Antarctica</p>
+                                <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
+                            </div>
+                            <!-- hidden card -->
+                            <div class="card_animal hide">
+                                <img class="card_image" src="img/gorillas2.png" alt="gorillas">
+                                <button class="animal_card_btn">gorillas</button>
+                                <p class="animal_paragraph">Native to Congo</p>
+                                <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
             </div>
-
-            <!-- second slider -->
-
-            <div class="container_carousel non-active">
-                <div class="card_animal show">
-                    <img class="card_image" src="img/gorillas2.png" alt="gorillas">
-                    <button class="animal_card_btn">gorillas</button>
-                    <p class="animal_paragraph">Native to Congo</p>
-                    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
-                </div>
-                <div class="card_animal show">
-                    <img class="card_image" src="img/eagles.png" alt="eagles">
-                    <button class="animal_card_btn">eagles</button>
-                    <p class="animal_paragraph">Native to South America</p>
-                    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
-                </div>
-                <div class="card_animal show">
-                    <img class="card_image" src="img/gorillas.png" alt="gorillas">
-                    <button class="animal_card_btn">gorillas</button>
-                    <p class="animal_paragraph">Native to Congo</p>
-                    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
-                </div>
-
-                <!-- hidden card -->
-                <div class="card_animal hide">
-                    <img class="card_image" src="img/alligators.png" alt="alligators">
-                    <button class="animal_card_btn">Alligators</button>
-                    <p class="animal_paragraph">Native to Southeastern United States</p>
-                    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
-                </div>
-
-
-                <div class="card_animal show">
-                    <img class="card_image" src="img/two-toed_sloth.png" alt="two-toed sloth">
-                    <button class="animal_card_btn">two-toed sloth</button>
-                    <p class="animal_paragraph">Mesoamerica, South America</p>
-                    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
-                </div>
-                <div class="card_animal show">
-                    <img class="card_image" src="img/cheetahs.png" alt="cheetahs">
-                    <button class="animal_card_btn">cheetahs</button>
-                    <p class="animal_paragraph">Native to Africa</p>
-                    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
-                </div>
-                <div class="card_animal show">
-                    <img class="card_image" src="img/penguins.png" alt="penguins">
-                    <button class="animal_card_btn">penguins</button>
-                    <p class="animal_paragraph">Native to Antarctica</p>
-                    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
-                </div>
-                
-                <!-- hidden card -->
-                <div class="card_animal hide">
-                    <img class="card_image" src="img/gorillas2.png" alt="gorillas">
-                    <button class="animal_card_btn">gorillas</button>
-                    <p class="animal_paragraph">Native to Congo</p>
-                    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
-                </div>
-            </div>
-
-            <!-- third slider -->
-            <div class="container_carousel non-active">
-                <div class="card_animal show">
-                    <img class="card_image" src="img/gorillas2.png" alt="gorillas">
-                    <button class="animal_card_btn">gorillas</button>
-                    <p class="animal_paragraph">Native to Congo</p>
-                    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
-                </div>
-                <div class="card_animal show">
-                    <img class="card_image" src="img/eagles.png" alt="eagles">
-                    <button class="animal_card_btn">eagles</button>
-                    <p class="animal_paragraph">Native to South America</p>
-                    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
-                </div>
-                <div class="card_animal show">
-                    <img class="card_image" src="img/gorillas.png" alt="gorillas">
-                    <button class="animal_card_btn">gorillas</button>
-                    <p class="animal_paragraph">Native to Congo</p>
-                    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
-                </div>
-
-                <!-- hidden card -->
-                <div class="card_animal hide">
-                    <img class="card_image" src="img/alligators.png" alt="alligators">
-                    <button class="animal_card_btn">Alligators</button>
-                    <p class="animal_paragraph">Native to Southeastern United States</p>
-                    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
-                </div>
-
-
-                <div class="card_animal show">
-                    <img class="card_image" src="img/two-toed_sloth.png" alt="two-toed sloth">
-                    <button class="animal_card_btn">two-toed sloth</button>
-                    <p class="animal_paragraph">Mesoamerica, South America</p>
-                    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
-                </div>
-                <div class="card_animal show">
-                    <img class="card_image" src="img/cheetahs.png" alt="cheetahs">
-                    <button class="animal_card_btn">cheetahs</button>
-                    <p class="animal_paragraph">Native to Africa</p>
-                    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
-                </div>
-                <div class="card_animal show">
-                    <img class="card_image" src="img/penguins.png" alt="penguins">
-                    <button class="animal_card_btn">penguins</button>
-                    <p class="animal_paragraph">Native to Antarctica</p>
-                    <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">
-                </div>
-                
-                <!-- hidden card -->
-                <div class="card_animal hide">
-                    <img class="card_image" src="img/gorillas2.png" alt="gorillas">
-                    <button class="animal_card_btn">gorillas</button>
-                    <p class="animal_paragraph">Native to Congo</p>
-                    <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">
-                </div>
-            </div>
-
             <button class="animal_btn">choose your favorite</button>
-        </section>
-        <section class="pick_and_feed">
+        </section>         
+            <section class="pick_and_feed">
             <div class="container">
                 <p class="header">Pick and feed a friend</p>
                 <p class="subtitle">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
@@ -380,5 +369,12 @@
         </footer>
     </main>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script src="js/carousel.js"></script>
 </html>
+
+
+
+
+
+<!--              -->

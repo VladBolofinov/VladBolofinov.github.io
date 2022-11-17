@@ -3,35 +3,35 @@ let leftCtrl = document.querySelector('.slider_btn.prev'),
     cards = document.querySelectorAll('.container_carousel.active .card_animal'),
     objCards = {
     0: `<img class="card_image" src="img/pandas.png" alt="pandas">
-    <button class="animal_card_btn">Giant pandas</button>
+    <p class="animal_card_btn">Giant pandas</p>
     <p class="animal_paragraph">Native to Southwest China</p>
     <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">`,
     1: `<img class="card_image" src="img/eagles.png" alt="eagles">
-    <button class="animal_card_btn">eagles</button>
+    <p class="animal_card_btn">eagles</p>
     <p class="animal_paragraph">Native to South America</p>
     <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">`,
     2: `<img class="card_image" src="img/gorillas.png" alt="gorillas">
-    <button class="animal_card_btn">gorillas</button>
+    <p class="animal_card_btn">gorillas</p>
     <p class="animal_paragraph">Native to Congo</p>
     <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">`,
     3: `<img class="card_image" src="img/alligators.png" alt="alligators">
-    <button class="animal_card_btn">Alligators</button>
+    <p class="animal_card_btn">Alligators</p>
     <p class="animal_paragraph">Native to Southeastern United States</p>
     <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">`,
     4: `<img class="card_image" src="img/two-toed_sloth.png" alt="two-toed sloth">
-    <button class="animal_card_btn">two-toed sloth</button>
+    <p class="animal_card_btn">two-toed sloth</p>
     <p class="animal_paragraph">Mesoamerica, South America</p>
     <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">`,
     5: `<img class="card_image" src="img/cheetahs.png" alt="cheetahs">
-    <button class="animal_card_btn">cheetahs</button>
+    <p class="animal_card_btn">cheetahs</p>
     <p class="animal_paragraph">Native to Africa</p>
     <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">`,
     6: `<img class="card_image" src="img/penguins.png" alt="penguins">
-    <button class="animal_card_btn">penguins</button>
+    <p class="animal_card_btn">penguins</p>
     <p class="animal_paragraph">Native to Antarctica</p>
     <img src="icons/meet-fish_icon.svg" alt="meet-fish_icon" class="card_icon_meet">`,
     7: `<img class="card_image" src="img/gorillas2.png" alt="gorillas">
-    <button class="animal_card_btn">gorillas</button>
+    <p class="animal_card_btn">gorillas</p>
     <p class="animal_paragraph">Native to Congo</p>
     <img src="icons/banana-bamboo_icon.svg" alt="banana-bamboo_icon" class="card_icon_bamboo">`
 },
@@ -83,4 +83,3 @@ var slider = tns({
     mixCarousel();
   });
 
-  

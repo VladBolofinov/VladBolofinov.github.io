@@ -82,3 +82,5 @@ var slider = tns({
     slider.goTo('next');
     mixCarousel();
   });
+
+  

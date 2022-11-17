@@ -25,6 +25,10 @@ header, footer
   border-radius: 2px
   width: 82px
   height: 52px
+  a
+    text-decoration: none
+    &:hover
+      text-decoration: none
 h1
   margin: 3.55px 4.75px
   font-size: 19.0145px
@@ -57,10 +61,20 @@ h1
         .wrapper
           display: flex
           justify-content: space-between
+          a
+          .item
+            text-decoration: none
+            color: #FFFFFF
+            &:hover
+              color: #F9804B
+          .about
+            color: #F9804B
       .trademark
+        text-decoration: none
+        color: #FFFFFF
         margin: 14px 0 0 438px
-        transform: translateX(155px)
-        transition: 4s
+        &:hover
+          color: #F9804B
 
 button
   width: 298px
@@ -207,7 +221,6 @@ button
         font-size: 15px
         line-height: 18px
         color: #000000
-
       .card_icon_bamboo
         display: inline-block
         float: right
@@ -215,7 +228,6 @@ button
         height: 37px
         margin: -13px 12px 0 0
         vertical-align: top
-
       .card_icon_meet
         display: inline-block
         float: right
@@ -234,11 +246,23 @@ button
   .active
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
+    justify-content: space-around
     width: 1160px
     margin: 0 auto
   .non-active
     display: none  
+
+.card_animal:hover
+  .card_image
+    transition: transform 1s
+    transform: scale(1.05)
+    filter: brightness(50%)
+  .animal_card_btn
+    transform: translate(100px, -100px)
+    transition: transform 1s
+  .animal_paragraph
+    transition: transform 1s
+    transform: translate(25px, -50px)
 
 .pick_and_feed
   height: 1004px

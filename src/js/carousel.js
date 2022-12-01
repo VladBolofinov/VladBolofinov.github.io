@@ -83,3 +83,25 @@ var slider = tns({
     mixCarousel();
   });
 
+  var slider2 = tns({
+    container: '.my-slider2',
+    items: 3,
+    slideBy: 1,
+    autoplay: false,
+    nav: false,
+    controls: false,
+    loop: true,
+    rewind: true,
+    mouseDrag: true,
+    responsive: {
+        1001: {
+            items: 4
+        }
+    }
+  });
+
+  let inputCtrl = document.querySelector('.scroll-line_inside');
+
+  inputCtrl.addEventListener('input', function () {
+        slider2.goTo(inputCtrl.value);
+  });

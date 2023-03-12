@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/onlineMovie/static/css/main.2d6ae318.css",
+    "main.js": "/onlineMovie/static/js/main.c5f0dcaa.js",
+    "static/media/wp3308201.jpg": "/onlineMovie/static/media/wp3308201.7c2f334f6584e8a33892.jpg",
+    "index.html": "/onlineMovie/index.html",
+    "main.2d6ae318.css.map": "/onlineMovie/static/css/main.2d6ae318.css.map",
+    "main.c5f0dcaa.js.map": "/onlineMovie/static/js/main.c5f0dcaa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d6ae318.css",
+    "static/js/main.c5f0dcaa.js"
+  ]
+}
